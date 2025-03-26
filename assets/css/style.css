@@ -1,0 +1,130 @@
+/* Estilos anteriores mantidos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.logo {
+    width: 100px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.social-sidebar {
+    width: 80px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    position: fixed;
+    height: 100vh;
+    justify-content: center;
+}
+
+.social-icon {
+    color: black;
+    font-size: 24px;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.main-content {
+    margin-left: 80px;
+    flex: 1;
+    padding: 40px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.nav-logo-mail{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.email {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espaço entre ícone e texto */
+    padding: 10px 15px;
+}
+
+.nav-btn:hover {
+    transform: translateY(-2px);
+}
+
+.projects-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: none;
+    width: 200px;
+    z-index: 10;
+}
+
+.projects-dropdown.show {
+    display: block;
+}
+
+.project-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.project-item:hover {
+    background-color: #f0f0f0;
+}
+
+.content-area {
+    padding: 30px;
+    min-height: 60vh;
+}
+
+#about {
+    width: 30%;
+}

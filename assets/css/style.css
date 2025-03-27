@@ -387,7 +387,6 @@ header {
     }
 
     .texto-about, .texto-sgi, .texto-sga {
-        margin-top: -4rem;
         position: relative;
         max-width: 100%;
         text-align: justify;
@@ -395,7 +394,7 @@ header {
     }
 
     .imagens-about, .imagens-sgi, .imagens-sga {
-        top: 90%;
+        top: 100%;
         position: absolute;
         display: flex;
         flex-direction: column;

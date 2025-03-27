@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="social-sidebar">
-            <a href="mailto:luan.sbc07@gmail.com" class="social-icon" title="Email">
+            <a href="mailto:luansbc.dev@gmail.com" class="social-icon" title="Email">
                 <i class="fas fa-envelope"></i>
             </a>
             <a href="https://linkedin.com/in/devls" target="_blank" class="social-icon" title="LinkedIn">
@@ -26,52 +26,82 @@
             <header>
                 <div class="nav-logo-mail">
                     <img src="assets/imagens/logo.png" alt="Logo DEVLSBC" class="logo">
-                    <div class="email">luan.sbc07@gmail.com</div>
+                    <div class="email">luansbc.dev@gmail.com</div>
                 </div>
                 <div class="nav-buttons">
+
                     <button class="nav-btn" id="about-btn"><i class="fa-solid fa-user-tie fa-2x"></i> Sobre Mim</button>
-                    <button class="nav-btn" id="projects-btn"><i class="fa-regular fa-file-code fa-2x"></i> Projetos</button>
-                    <div class="projects-dropdown" id="projects-dropdown">
-                        <div class="project-item" data-target="sgi">SGI</div>
-                        <div class="project-item" data-target="sga">SGA</div>
-                    </div>
+
+                        <div class="dropdown-container">
+                            <button class="nav-btn" id="projects-btn"><i class="fa-regular fa-file-code fa-2x"></i> Projetos</button>
+                                <div class="projects-dropdown" id="projects-dropdown">
+                                    <div class="project-item" data-target="sgi">SGI</div>
+                                    <div class="project-item" data-target="sga">SGA</div>
+                                </div>
+                        </div>
+
                 </div>
             </header>
             
             <div class="content-area">
                 <div id="about" class="content-section">
-                    <!-- Conteúdo do Sobre Mim (mantido igual) -->
-                    <h1>Luan Silva</h1><br>
-                    <h2>Resumo Profissional</h2>
-                    <p>Desenvolvedor Júnior com experiência no desenvolvimento de sistemas web, especializado em PHP, JavaScript, MySQL e automação de processos. Atuei na criação de sistemas de gestão e filas de atendimento, contribuindo para a otimização de fluxos administrativos. Experiência na administração de servidores Linux e na implementação de soluções escaláveis. Atualmente aprimorando conhecimentos em Laravel e React para desenvolvimento full stack. Busco oportunidades para aplicar minhas habilidades em projetos inovadores e de impacto.</p>
-                    
-                    <!-- Restante do conteúdo Sobre Mim -->
+
+                    <div class="texto-about">
+                        <h1>Luan Silva</h1><br>
+                        <h2>Resumo Profissional</h2>
+                        <p>Desenvolvedor Júnior com experiência no desenvolvimento de sistemas web, especializado em PHP, JavaScript, MySQL e automação de processos. Atuei na criação de sistemas de gestão e filas de atendimento, contribuindo para a otimização de fluxos administrativos. Experiência na administração de servidores Linux e na implementação de soluções escaláveis. Atualmente aprimorando conhecimentos em Laravel e React para desenvolvimento full stack. Busco oportunidades para aplicar minhas habilidades em projetos inovadores e de impacto.</p>      
+                    </div>
+                    <div class="imagens-about">
+                        <img src="assets/imagens/luan.jpg" alt="Foto Perfil">
+                    </div>
                 </div>
                 
-                <div id="sgi" class="content-section" style="display: none;">
-                    <!-- Conteúdo do SGI (mantido igual) -->
-                    <h1>Sistema de Gestão Interna (SGI)</h1>
-                    <p><strong>Status:</strong> Em desenvolvimento</p>
+                <div id="sgi" class="content-section">
+
+                    <div class="texto-sgi">
+                        <h1>Sistema de Gestão Interna (SGI)</h1>
+                        <p><strong>Status:</strong> Interrompido</p>
+                        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, PHP 8.2.12 e MariaDB 10.4.32 (MySQL)</p>
+                        <p><strong>Desafios: </strong> POKINHASLFNAJLSFNJALFSLFB</p>
+                        
+                        <h2>Descrição</h2>
+                        <p>SGI é um sistema capaz de gerenciar usuários, documentos e tem o SGA como um de seus principais módulos integrados. Utilizando como tecnologias HTML, CSS, MySQL, PHP e JavaScript, o projeto tem o objetivo de centralizar os processos do setor administrativo em um só lugar, dando maior controle e segurança.</p>
+                    </div>
+
+                    <div class="imagens-sgi">
+                        <img src="assets/imagens/sgi-login.png" alt="Tela de Login do SGI">
+                        <img src="assets/imagens/sgi-admin.png" alt="Admin do SGI">
+                        <img src="assets/imagens/sgi-dash.png" alt="Dashboard do SGI">
+                        <img src="assets/imagens/sgi-pop.png" alt="Modulo POP SGI">
+                    </div>
                     
-                    <h2>Descrição</h2>
-                    <p>SGI é um sistema capaz de gerenciar usuários, documentos e tem o SGA como um de seus principais módulos integrados. Utilizando como tecnologias HTML, CSS, MySQL, PHP e JavaScript, o projeto tem o objetivo de centralizar os processos do setor administrativo em um só lugar, dando maior controle e segurança.</p>
-                    
-                    <!-- Restante do conteúdo SGI -->
                 </div>
                 
-                <div id="sga" class="content-section" style="display: none;">
-                    <!-- Conteúdo do SGA (mantido igual) -->
-                    <h1>Sistema de Gerenciamento de fila de Atendimento (SGA)</h1>
-                    <p><strong>Status:</strong> Implementado no HDMJBO</p>
+                <div id="sga" class="content-section">
+
+                    <div class="texto-sga">
+                        <h1>Sistema de Gerenciamento de fila de Atendimento (SGA)</h1>
+                        <p><strong>Status:</strong> Implementado no HDMJBO e HDEAM (Frotinhas da Parangaba e Antonio Bezerra)</p>
+                        <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, PHP 8.2.12 e MariaDB 10.4.32 (MySQL)</p>
+                        
+                        <h2>Descrição</h2>
+                        <p>SGA é um sistema destinado a clínicas médicas, hospitais e empresas com atendimento ao público e tem o objetivo de gerenciar a fila de atendimento, tornando o atendimento mais organizado, prático e cômodo.</p>
+                    </div>
+
+                    <div class="imagens-sga">
+                        <img src="assets/imagens/sga-paciente.png" alt="Cadastro Paciente SGA">
+                        <img src="assets/imagens/sga-tela.png" alt="Tela Paciente SGA">
+                    </div>
                     
-                    <h2>Descrição</h2>
-                    <p>SGA é um sistema destinado a clínicas médicas, hospitais e empresas com atendimento ao público e tem o objetivo de gerenciar a fila de atendimento, tornando o atendimento mais organizado, prático e cômodo.</p>
-                    
-                    <!-- Restante do conteúdo SGA -->
                 </div>
             </div>
         </div>
     </div>
 </body>
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+</div>
 <script src="assets/js/app.js"></script>
 </html>

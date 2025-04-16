@@ -20,7 +20,8 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    
+    flex-direction: column;
+    width: 100%;
 }
 
 .social-sidebar {
@@ -55,14 +56,19 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
-    position: relative;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    flex: 1;
+    min-height: 15vh;
+    max-height: 15vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 86vw;
+    padding-bottom: 1rem;
 }
 
 .nav-logo-mail{
@@ -171,6 +177,10 @@ header {
     text-align: justify;
 }
 
+.texto-about h1 {
+    font-size: 32px;
+}
+
 .imagens-about {
     flex: 1; 
     max-width: 40%; 
@@ -191,6 +201,10 @@ header {
 .texto-sgi {
     flex: 1; 
     max-width: 50%; 
+}
+
+.texto-sgi h1 {
+    font-size: 32px;
 }
 
 .imagens-sgi {
@@ -232,6 +246,10 @@ header {
 .texto-sga {
     flex: 1;
     width: 100%;
+}
+
+.texto-sga h1 {
+    font-size: 32px;
 }
 
 .texto-sga ul {
@@ -387,10 +405,6 @@ header {
         gap: 5px;
     }
 
-    .main-content {
-        margin-top: -2rem;
-    }
-
     .content-area {
         position: relative;
         display: flex;
@@ -401,7 +415,15 @@ header {
         padding: 10px;
     }
 
-    .texto-about, .texto-sgi, .texto-sga {
+    .texto-about {
+        position: relative;
+        max-width: 100%;
+        text-align: justify;
+        order: -1;
+        margin-top: -6rem;
+    }
+
+    .texto-sgi, .texto-sga {
         position: relative;
         max-width: 100%;
         text-align: justify;

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="social-sidebar">
+        <aside class="social-sidebar">
             <a href="mailto:luansbc.dev@gmail.com" class="social-icon" title="Email">
                 <i class="fas fa-envelope"></i>
             </a>
@@ -20,18 +20,17 @@
             <a href="https://github.com/DEVLSBC" target="_blank" class="social-icon" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-        </div>
-        
-        <div class="main-content">
-            <header>
+        </aside>
+
+        <header>
+            <div class="header">
                 <div class="nav-logo-mail">
                     <img src="assets/imagens/logo.png" alt="Logo DEVLSBC" class="logo">
                     <div class="email">luansbc.dev@gmail.com</div>
                 </div>
+                
                 <div class="nav-buttons">
-
                     <button class="nav-btn" id="about-btn"><i class="fa-solid fa-user-tie fa-2x"></i> Sobre Mim</button>
-
                         <div class="dropdown-container">
                             <button class="nav-btn" id="projects-btn"><i class="fa-regular fa-file-code fa-2x"></i> Projetos</button>
                                 <div class="projects-dropdown" id="projects-dropdown">
@@ -39,26 +38,28 @@
                                     <div class="project-item" data-target="sga">SGA</div>
                                 </div>
                         </div>
-
                 </div>
-            </header>
-            
-            <div class="content-area">
-                <div id="about" class="content-section">
+            </div>
+        </header>
+        
+        <main class="main-content">
 
-                    <div class="texto-about">
+            <div class="content-area">
+                <section id="about" class="content-section">
+
+                    <article class="texto-about">
                         <h1>Luan Silva</h1><br>
                         <h2>Resumo Profissional</h2>
                         <p>Desenvolvedor Júnior com experiência no desenvolvimento de sistemas web, especializado em PHP, JavaScript, MySQL e automação de processos. Atuei na criação de sistemas de gestão e filas de atendimento, contribuindo para a otimização de fluxos administrativos. Experiência na administração de servidores Linux e na implementação de soluções escaláveis. Atualmente aprimorando conhecimentos em Laravel e React para desenvolvimento full stack. Busco oportunidades para aplicar minhas habilidades em projetos inovadores e de impacto.</p>      
-                    </div>
-                    <div class="imagens-about">
+                    </article>
+                    <article class="imagens-about">
                         <img src="assets/imagens/luan.jpg" alt="Foto Perfil">
-                    </div>
-                </div>
+                    </article>
+                </section>
                 
-                <div id="sgi" class="content-section">
+                <section id="sgi" class="content-section">
 
-                    <div class="texto-sgi">
+                    <article class="texto-sgi">
                         <h1>Sistema de Gestão Interna (SGI)</h1>
                         
                         <p><strong>Status:</strong> Interrompido</p>
@@ -85,20 +86,20 @@
                     
                         <h2>Conclusão</h2>
                         <p>Apesar do projeto ter sido interrompido, ele proporcionou um grande aprendizado no desenvolvimento de sistemas administrativos e integração de módulos.</p>
-                    </div>                    
+                    </article>                    
 
-                    <div class="imagens-sgi">
+                    <article class="imagens-sgi">
                         <img src="assets/imagens/sgi-login.png" alt="Tela de Login do SGI">
                         <img src="assets/imagens/sgi-admin.png" alt="Admin do SGI">
                         <img src="assets/imagens/sgi-dash.png" alt="Dashboard do SGI">
                         <img src="assets/imagens/sgi-pop.png" alt="Modulo POP SGI">
-                    </div>
+                    </article>
                     
-                </div>
+                </section>
                 
-                <div id="sga" class="content-section">
+                <section id="sga" class="content-section">
 
-                    <div class="texto-sga">
+                    <article class="texto-sga">
                         <h1>Sistema de Gerenciamento de fila de Atendimento (SGA)</h1>
                         <p><strong>Status:</strong> Implementado no HDMJBO e HDEAM (Frotinhas da Parangaba e Antonio Bezerra)</p>
                         <p><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript, PHP 8.2.12 e MariaDB 10.4.32 (MySQL)</p>
@@ -124,17 +125,18 @@
                     
                         <h2>Conclusão</h2>
                         <p>O projeto foi implementado com sucesso e não apresentou erros durante seu tempo de utilização, posteriormente foi possível melhorar a estrutura de arquivos porém não tive a oportunidade de melhorar o código ou documentar.</p>
-                    </div>
+                    </article>
 
-                    <div class="imagens-sga">
+                    <article class="imagens-sga">
                         <img src="assets/imagens/sga-paciente.png" alt="Cadastro Paciente SGA">
                         <img src="assets/imagens/sga-tela.png" alt="Tela Paciente SGA">
-                    </div>
+                    </article>
                     
-                </div>
+                </section>
             </div>
-        </div>
+        </main>
     </div>
+
 </body>
 <div id="imageModal" class="modal">
     <span class="close">&times;</span>

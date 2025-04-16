@@ -424,7 +424,7 @@ header {
     }
 
     .content-section {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -558,7 +558,7 @@ header {
     }
 
     .content-section {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -692,7 +692,7 @@ header {
     }
 
     .content-section {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
     }
@@ -826,7 +826,7 @@ header {
     }
 
     .content-section {
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
     }
